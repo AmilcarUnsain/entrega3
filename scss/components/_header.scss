@@ -1,4 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 $color-principal: black;
+
 
 header {
     display: flex;
@@ -8,29 +15,42 @@ header {
     align-items: center;
     color: white;
     padding: 16px;
+    
+    .imagen-fondo {
+        background-image: url(/img/imagen\ de\ fondo.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: sans-serif;
+        max-width: 500px;
+        min-width: 500px;
+      }
 
-.logo {
+    .logo {
         display: flex;
         align-items: center;
-
-.logo img {
+         }
+        
+    .logo img {
             width: 300px;
             height: 300px;
             display: flex;
             justify-content: start;
-        }
-nav {
+         } 
+    
+         nav {
     display: flex;
-
-    ul{
+     }
+    ul {
     list-style: none;
     flex-direction: column;
     gap: 16px;
-
-    li{
+         }
+    li {
         text-decoration: none;
         padding: 16px;
-
+         }
     a {
         text-decoration: none;
         color: $color-principal;
@@ -40,22 +60,8 @@ nav {
 
     a:hover {
             color: darkblue;
-    
-    body .imagen-fondo {
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
-            background-size: cover;
-            font-family: sans-serif;
-            max-width: 500px;
-            min-width: 500px;
-        }
-    }        
-    } 
-   }        
-  }
- }        
-}
+         }
+     }       
 
 main {
     section {

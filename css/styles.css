@@ -4,56 +4,6 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  padding: 16px;
-}
-header .logo {
-  display: flex;
-  align-items: center;
-}
-header .logo .logo img {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: start;
-}
-header .logo nav {
-  display: flex;
-}
-header .logo nav ul {
-  list-style: none;
-  flex-direction: column;
-  gap: 16px;
-}
-header .logo nav ul li {
-  text-decoration: none;
-  padding: 16px;
-}
-header .logo nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  color: brown;
-}
-header .logo nav ul li a:hover {
-  color: darkblue;
-}
-header .logo nav ul li a:hover body .imagen-fondo {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: sans-serif;
-  max-width: 500px;
-  min-width: 500px;
-}
-
 @media (min-width: 768px) {
   main .secciones-estadisticas,
   main .seccion-inicio {
@@ -87,6 +37,32 @@ header .logo nav ul li a:hover body .imagen-fondo {
     gap: 16px;
   }
 }
+h3 {
+  color: darkblue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulos-principales {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes mover-izquierda-derecha {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -94,6 +70,12 @@ header .logo nav ul li a:hover body .imagen-fondo {
   padding: 10px 10px;
   color: white;
   background-color: green;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -105,38 +87,8 @@ header {
   color: white;
   padding: 16px;
 }
-header .logo {
-  display: flex;
-  align-items: center;
-}
-header .logo .logo img {
-  width: 300px;
-  height: 300px;
-  display: flex;
-  justify-content: start;
-}
-header .logo nav {
-  display: flex;
-}
-header .logo nav ul {
-  list-style: none;
-  flex-direction: column;
-  gap: 16px;
-}
-header .logo nav ul li {
-  text-decoration: none;
-  padding: 16px;
-}
-header .logo nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-  color: brown;
-}
-header .logo nav ul li a:hover {
-  color: darkblue;
-}
-header .logo nav ul li a:hover body .imagen-fondo {
+header .imagen-fondo {
+  background-image: url(/img/imagen\ de\ fondo.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -144,6 +96,37 @@ header .logo nav ul li a:hover body .imagen-fondo {
   font-family: sans-serif;
   max-width: 500px;
   min-width: 500px;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: start;
+}
+header nav {
+  display: flex;
+}
+header ul {
+  list-style: none;
+  flex-direction: column;
+  gap: 16px;
+}
+header li {
+  text-decoration: none;
+  padding: 16px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  color: brown;
+}
+header a:hover {
+  color: darkblue;
 }
 
 main section .seccion-inicio {
