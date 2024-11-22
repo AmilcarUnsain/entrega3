@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("../img/imagen-de-fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
+}
 
 @media (min-width: 768px) {
     main .secciones-estadisticas,
@@ -21,6 +28,7 @@
         flex-direction: row;
         gap: 16px;
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -64,6 +72,7 @@ h3 {
         transform: translateX(-100px);
     }
     to {
-        transform: translateX(200px);
+        transform: translateX(10px);
     }
+    
  }
