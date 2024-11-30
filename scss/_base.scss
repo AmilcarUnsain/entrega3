@@ -106,8 +106,18 @@ main {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0px 3px rgba(15, 15, 15, .5);
-         }
+        }
 
+         .imagenes-articulos {
+            width: 350px;
+            height: 250px;
+            max-width: 1000px;
+            min-width: 320px;
+            margin: auto;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0px 3px rgba(15, 15, 15, .5);
+        }
 
          h4 {
             display: flex;
@@ -121,8 +131,20 @@ main {
             text-shadow: 2px 2px 10px blue;
             font-family: "Roboto Slab", serif;
          }
+
      }
  }
+
+.informacion {
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 17px;
+    text-shadow: 2px 2px 5px $color-principal;
+    font-family: "Roboto Slab", serif;
+}
 
 @media (min-width: 768px) {
     main .secciones-estadisticas,
