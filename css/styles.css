@@ -206,7 +206,7 @@ h3 {
     scale: 100%;
   }
 }
-img {
+.imagenes-articulos {
   view-timeline-name: --image;
   view-timeline-axis: block;
   animation-timeline: --image;
